@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container_main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header-style {
+  width: 1222px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__contacts {
+  display: flex;
+  height: 68px;
+  width: 1170px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.login-button {
+  background-color: #fff;
+  border: none;
+  font-family: Inter, san-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.header__login-button {
+  display: flex;
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.gold_button {
+  background-color: #B18438;
+  border: none;
+  border-radius: 20px 0px;
+  font-family: Inter, san-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 5px 30px 6px 31px;
+}
+
+.header__search {
+  border: 2px solid #000;
+  height: 45px;
+  padding-left: 5px;
+}
+
+.header__search-input {
+  width: 116px;
+  height: 40px;
+  border: none;
+}
+.header__search-input:focus {
+  outline: none;
+}
+.header__search-input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.header__search-input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.header__search-input::-webkit-search-decoration, .header__search-input::-webkit-search-cancel-button, .header__search-input::-webkit-search-results-button, .header__search-input::-webkit-search-results-decoration {
+  display: none;
+}
+
+i {
+  color: #000;
+  margin-right: 10px;
+}
+
+.header__phone-numbers {
+  color: #000;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 1.3px;
+  text-align: left;
+}
+.header__phone-numbers:hover {
+  text-decoration: underline;
+}
+
+.contacts_social {
+  display: flex;
+}
+
+.socials__list {
+  display: flex;
+  width: 191px;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0;
+}
+.socials__list li a img {
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=style.css.map */
