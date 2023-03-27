@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 $gold: #B18438;
 $purple: #BC6878;
 $grey: #4D4849;
 $Inter: Inter, san-serif;
+$space-grotesk: 'Space Grotesk', sans-serif;
+$poiret-one: 'Poiret One', cursive;
 
 * {
 	margin: 0px;
@@ -21,8 +24,11 @@ a {
 li {
     list-style: none;
   }
+  button:hover {
+    cursor: pointer;
+  }
 .header-style {
-    width: 1222px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -47,13 +53,11 @@ line-height: 13px;
 .header__login-button {
   display: flex;
   align-self: center;
+  width: 50px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   }
-.header__join-button {
-  
-}
 .gold_button {
     background-color: $gold;
     border: none;
@@ -66,14 +70,16 @@ padding: 5px 30px 6px 31px;
 }
 .header__search {
   border: 2px solid #000;
-  height: 45px;
+  width: 116px;
+  height: 40px;
   padding-left: 5px;
 }
 .header__search-input {
-  width: 116px;
-  height: 40px;
+  width: 70px;
+  height: 36px;
+  line-height: 18px;
   border: none;
-
+  
   &:focus {
     outline: none;
   }
@@ -96,7 +102,7 @@ i {
 }
 .header__phone-numbers {
   color: #000;
-  font-family: 'Space Grotesk', sans-serif;;
+  font-family: $space-grotesk;
 font-size: 16px;
 font-weight: 700;
 line-height: 13px;
@@ -114,7 +120,7 @@ text-align: left;
 display: flex;
 width: 191px;
 justify-content: space-between;
-align-items: end;
+align-items: flex-end;
 padding: 0;
 
   & li a img {
@@ -124,5 +130,173 @@ padding: 0;
 }
 
 .header__navigation {
-    
+  width: 100%;
+  height: 94px;
+    background-color: $purple;
+}
+.header__navigation_content {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+.navigation_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 720px;
+  height: 100%;
+
+  & li a {
+color: #fff;
+font-family: $Inter;
+font-size: 12px;
+font-weight: 300;
+line-height: 13px;
+letter-spacing: 1.3px;
+text-align: left;
+
+    & i {
+      color: #fff;
+    }
+  }
+}
+.section_welcome {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+.welcome__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f0f0f0;
+  width: 100%;
+  
+  & h1 {
+    width: 1095px;
+    margin: 0;
+    font-family: $poiret-one;
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 129px;
+    color: $gold;
+    background-image: url(/assets/logo_branch.svg);
+    background-repeat: no-repeat;
+    background-position-x: 5.5em;
+    background-position-y: 0.1em;
+   word-spacing: 5rem;
+   
+  }
+}
+.welcome__description_text {
+  display: flex;
+  width: 787px;
+  height: 80px;
+  font-family: $Inter;
+font-size: 26px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: center;
+text-transform: uppercase  ;
+}
+.welcome__image {
+  display: flex;
+  height: 660px;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("/assets/women-welcome.jpeg");
+  padding-bottom: 31px;
+}
+.welcome__links {
+  display: flex;
+  justify-content: space-between;
+  width: 642px;
+  padding-left: 100px;
+  
+}
+.welcome__links_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+    height: 90px;
+  background: rgba(255, 255, 255, 0.7);
+border-radius: 2px;
+padding: 8px 10px 8px;
+
+  & a {
+   //display: block;
+  font-family: $poiret-one;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+  color: $gold;
+  }
+}
+.arrow-1 {
+  cursor: pointer;
+ position: relative;
+  width: 100%;
+  height: 20px;
+  padding-left: 30%;
+  
+}
+.arrow-1 div {
+  position: relative;
+  top: 20px;
+  width: 53px;
+  height: 1px;
+  background-color: #000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  left:0;
+  display: block;
+}
+.arrow-1 div::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  top: -7px;
+  right: -3px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+.arrow-1 div::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  top: 7px;
+  right: -3px;
+  background-color: #000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
+.arrow-1:hover {
+  -webkit-animation: arrow-1 1s linear infinite;
+          animation: arrow-1 1s linear infinite;
+}
+@-webkit-keyframes arrow-1 {
+  0% {
+      left:0;
+  }
+  50% {
+      left:10px;
+  }
+  100% {
+      left:0;
+  }
+}
+@keyframes arrow-1 {
+  0% {
+      left:0;
+  }
+  50% {
+      left:10px;
+  }
+  100% {
+      left:0;
+  }
 }
