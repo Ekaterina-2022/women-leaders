@@ -10,6 +10,8 @@
 
 .container_main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -166,22 +168,34 @@ i {
   color: #fff;
 }
 
-.section_welcome {
+.main__style {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.section {
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_welcome {
+  background: #f0f0f0;
 }
 
 .welcome__description {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #f0f0f0;
-  width: 100%;
+  width: 1170px;
+  margin: 0 auto;
 }
 .welcome__description h1 {
   width: 1095px;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Poiret One", cursive;
   font-size: 110px;
   font-weight: 400;
@@ -209,11 +223,15 @@ i {
 
 .welcome__image {
   display: flex;
+  width: 100%;
   height: 660px;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("/assets/women-welcome.jpeg");
+  background-image: url(/assets/women-welcome.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 31px;
+  margin: 0 auto;
 }
 
 .welcome__links {
@@ -295,4 +313,46 @@ i {
   100% {
     left: 0;
   }
+}
+.section_purposes {
+  align-items: center;
+  padding-top: 100px;
+}
+
+.purposes__slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 630px;
+  height: 150px;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.purposes__slogan q {
+  color: #B18438;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+}
+.purposes__slogan q span {
+  font-family: Inter, san-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 60px;
+}
+
+.purposes__slogan::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 140px;
+  bottom: 5%;
+  left: 30%;
+  z-index: -1;
+  background: url(/assets/logo_lavr.svg) 0 0 no-repeat;
+  transform: rotate(2deg);
 }/*# sourceMappingURL=style.css.map */
