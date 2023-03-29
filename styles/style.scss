@@ -219,7 +219,7 @@ text-transform: uppercase;
   height: 660px;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("/assets/women-welcome.jpeg");
+  background-image: url("../assets/women-welcome.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 31px;
@@ -353,6 +353,6 @@ line-height: 60px;
   bottom: 5%;
   left: 30%;
   z-index: -1;
-  background: url("/assets/logo_lavr.svg") 0 0 no-repeat;
+  background: url("../assets/logo_lavr.svg") 0 0 no-repeat;
   transform: rotate(2deg);
 }
