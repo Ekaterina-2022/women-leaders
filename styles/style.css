@@ -227,7 +227,7 @@ i {
   height: 660px;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("assets/women-welcome.jpeg");
+  background-image: url("./assets/women-welcome.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 31px;
