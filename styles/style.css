@@ -316,7 +316,7 @@ i {
 }
 .section_purposes {
   align-items: center;
-  padding-top: 100px;
+  padding: 100px 0 0 100px;
 }
 
 .purposes__slogan {
@@ -335,13 +335,13 @@ i {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 62px;
   line-height: 60px;
 }
 .purposes__slogan q span {
   font-family: Inter, san-serif;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 26px;
   line-height: 60px;
 }
 
@@ -355,4 +355,75 @@ i {
   z-index: -1;
   background: url("../assets/logo_lavr.svg") 0 0 no-repeat;
   transform: rotate(2deg);
+}
+
+.purposes__commitment {
+  display: flex;
+  flex-direction: column;
+  padding-top: 152px;
+}
+.purposes__commitment h2 {
+  padding-left: 28%;
+  padding-bottom: 32px;
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 82px;
+  text-transform: uppercase;
+  color: #B18438;
+}
+
+.commitment__text_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  height: 733px;
+  background-image: url("../assets/commitment_women.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  padding-top: 25%;
+}
+
+.commitment__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1040px;
+  height: 348px;
+  margin: 0 auto;
+  padding: 13px 80px 44px 82px;
+  border: 1px solid #B18438;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.commitment__text p {
+  width: 848px;
+  font-family: "Poiret One", cursive;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.215em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.commitment__text div {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  position: relative;
+}
+.commitment__text div::before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 68px;
+  bottom: 50%;
+  left: 10%;
+  background: url("../assets/logo_branch_svg.svg") 0 0 no-repeat;
+  transform: rotate(2deg);
+  z-index: 1000;
+}
+
+.commitment__button {
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */
